@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "5bbfcc2c-abaa-4128-b471-c84e068dd991",
+		"name": "API Cart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37169849"
+	},
+	"item": [
+		{
+			"name": "Add Product To Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "productId",
+							"value": " 1",
+							"type": "text"
+						},
+						{
+							"key": "quantity",
+							"value": " 5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/carts/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"carts",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
